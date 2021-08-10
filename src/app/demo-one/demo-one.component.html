@@ -1,0 +1,9 @@
+<mat-card>
+  <mat-accordion>
+    <mat-expansion-panel [expanded]="true" *ngFor="let item of items">
+      <mat-expansion-panel-header>{{item.name}}</mat-expansion-panel-header>
+      {{item.value}}
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-card>
+<button (click)="onAddItem()">Add Item</button>
